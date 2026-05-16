@@ -253,13 +253,15 @@
       flex-shrink: 0;
     }
     .logo-mark {
-      width: 34px;
-      height: 34px;
-      background: var(--moss);
-      border-radius: 9px;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
     }
     .logo-mark svg { width: 19px; height: 19px; }
     .logo-name {
@@ -1239,12 +1241,7 @@
   <div class="header-inner">
     <a href="#" class="logo">
       <div class="logo-mark">
-        <!-- Leaf / compass icon -->
-        <svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.5 2C5.36 2 2 5.36 2 9.5C2 13.64 5.36 17 9.5 17C13.64 17 17 13.64 17 9.5C17 5.36 13.64 2 9.5 2Z" fill="white" fill-opacity="0.25"/>
-          <path d="M9.5 5.5L11.5 9.5L9.5 8.5L7.5 9.5L9.5 5.5Z" fill="white"/>
-          <path d="M9.5 13.5L7.5 9.5L9.5 10.5L11.5 9.5L9.5 13.5Z" fill="white" fill-opacity="0.55"/>
-        </svg>
+        <img src="assets/pose4.png" alt="ペンリー" style="width:52px;height:52px;object-fit:contain;">
       </div>
       <div>
         <span class="logo-name">Navily</span>

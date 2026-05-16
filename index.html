@@ -403,6 +403,21 @@
       color: var(--muted);
     }
 
+    .hero-key-phrase {
+      font-family: var(--ff-ja);
+      font-size: clamp(15px, 2vw, 18px);
+      font-weight: 700;
+      line-height: 1.75;
+      color: var(--heading);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      margin: 18px 0;
+    }
+    .kp-accent {
+      color: var(--moss);
+    }
+
     /* Hero Visual */
     .hero-visual { position: relative; }
 
@@ -1285,10 +1300,16 @@
           意志の弱さじゃない。
         </p>
 
-        <p class="hero-sub">
-          教材も、動画も、AIもある。<br>
-          でも、あなたの目的に合った「順番」がなければ、<br>
-          学びは成果につながらない。<br><br>
+        <p class="hero-sub" style="margin-bottom:0;">
+          教材も、動画も、AIもある。
+        </p>
+
+        <div class="hero-key-phrase">
+          でも、あなたの目的に合った<span class="kp-accent">「順番」</span>がなければ、<br>
+          学びは成果につながらない。
+        </div>
+
+        <p class="hero-sub" style="margin-top:0;">
           Navilyは、対話でゴールを見つけ、<br>
           あなた専用のロードマップと教材をつくるAIコーチです。
         </p>

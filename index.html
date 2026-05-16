@@ -1054,15 +1054,16 @@
       pointer-events: none;
     }
     .signup-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
+      display: flex;
+      flex-direction: column;
       align-items: center;
+      text-align: center;
+      gap: 36px;
     }
     .signup-left h2 {
       font-family: var(--ff-ja);
       font-size: clamp(26px, 3.5vw, 42px);
-      font-weight: 600;
+      font-weight: 700;
       color: #fff;
       line-height: 1.3;
       margin-bottom: 22px;
@@ -1073,8 +1074,8 @@
       line-height: 1.85;
       margin-bottom: 10px;
     }
-    .signup-penly { margin-top: 32px; }
-    .signup-penly img { width: 130px; }
+    .signup-penly { margin-top: 16px; }
+    .signup-penly img { width: 100px; }
 
     .form-card {
       background: var(--cream);
@@ -2023,36 +2024,14 @@
         </div>
       </div>
 
-      <div class="reveal reveal-d1">
-        <div class="form-card">
-          <form onsubmit="handleSubmit(event)">
-            <div class="fg">
-              <label class="fl">メールアドレス<span class="req">*</span></label>
-              <input type="email" class="fi" placeholder="example@mail.com" required>
-            </div>
-            <div class="fg">
-              <label class="fl">呼んでほしい名前（任意）</label>
-              <input type="text" class="fi" placeholder="例：りっきー">
-            </div>
-            <div class="fg">
-              <label class="fl">今いちばん形にしたいこと</label>
-              <select class="fs">
-                <option value="" disabled selected>選んでください</option>
-                <option>仕事でAIを使えるようになりたい</option>
-                <option>今の仕事で成果を出したい</option>
-                <option>転職・副業に向けて準備したい</option>
-                <option>学びを続けられる習慣を作りたい</option>
-                <option>まだ決まっていない</option>
-              </select>
-            </div>
-            <button type="submit" class="f-submit">5分で、あなただけのロードマップを作る</button>
-          </form>
-          <p class="f-note">
-            クレジットカード不要。<br>
-            登録後すぐに、ペンリーとの対話を始められます。
-          </p>
-        </div>
-        <p class="brand-line-final">Your vision can take shape.</p>
+      <div class="reveal reveal-d1" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+        <a href="https://navilyai.com/ja/signup" class="btn btn-amber-lg" style="font-size:18px;padding:20px 48px;">
+          5分で、あなただけのロードマップを作る
+        </a>
+        <p style="color:rgba(255,255,255,0.6);font-size:13px;margin-top:14px;line-height:1.7;">
+          クレジットカード不要。登録後すぐ始められます。
+        </p>
+        <p class="brand-line-final" style="margin-top:20px;">Your vision can take shape.</p>
       </div>
 
     </div>
